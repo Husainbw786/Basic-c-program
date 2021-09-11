@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+    int p,r,t,simple_i ;
+
+   printf("-----input priciple,rate and time to find SI-----\n ");
+   printf("enter principle value\n");
+   scanf("%d",&p);
+   printf("enter rate of interest value\n");
+   scanf("%d",&r);
+   printf("enter time value\n");
+   scanf("%d",&t);
+   simple_i = (p*r*t)/100 ;
+   printf("simple interest is equal to %d",simple_i);
+}
