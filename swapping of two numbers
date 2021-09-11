@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+int main(){
+    int a,b,c;
+    printf("swaping of two numbers\n");
+    printf("enter first number\n");
+    scanf("%d",&a);
+    printf("enter second number\n");
+    scanf("%d",&b);
+    
+    a = b;
+    b = c;
+    c = a;
+    printf("after swaping first number = %d",&a);
+    printf("after swaping second number = %d",&c);
+    
+
+}
+
