@@ -11,8 +11,8 @@ int main(){
     a = b;
     b = c;
     c = a;
-    printf("after swaping first number = %d",&a);
-    printf("after swaping second number = %d",&c);
+    printf("after swaping first number = %d",a);
+    printf("after swaping second number = %d",c);
     
 
 }
