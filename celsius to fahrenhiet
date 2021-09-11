@@ -6,5 +6,5 @@ printf("-----program to convert given fahrenheit value into celsius-----\n");
 printf("enter the value in fahrenhiet\n");
 scanf("%d",&fah);
 cel = (fah-32)*5/9 ;
-printf("the value in fahrenhiet is %d",&cel);
+printf("the value in fahrenhiet is %d",cel);
 }
