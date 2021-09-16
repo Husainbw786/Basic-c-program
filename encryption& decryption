@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+int main(){
+int encrpt_no,decrypt_no,num,num2;
+ printf("enter the number for encryption\n");
+ scanf("%d",&num);
+ encrpt_no = num^decrypt_no;
+ printf("the number after encryption is %d\n", encrpt_no);
+ printf("enter number for decryption key\n");
+ scanf("%d",&num2);
+ encrpt_no= num2^decrypt_no;
+ printf("the number after decryption is %d\n",encrpt_no);
+ 
+ 
+ 
+}
