@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+int quantity, discount=0;
+float rate,expense;
+printf("enter the quantity\n");
+scanf("%d",&quantity);
+printf("enter rate \n");
+scanf("%d",&rate);
+
+if (quantity>1000)
+     discount = 10;
+expense = quantity*rate -(quantity*rate*discount/100);
+printf("total expense is = rs.%f\n",expense);
+     
+ 
+ 
+}
