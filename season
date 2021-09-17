@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(){
+    int  spring,winter,rainy,summer,september,october,november,december, January,february,march,april,may,june,july,august,month;
+    printf("-----enter the month-----\n");
+    scanf("%d",&month);
+    if(month = september,october,november)
+       printf("spring");
+    else if(month = december,January,february)
+       printf("winter");
+    else if(month = march,april,may)
+        printf("summer");
+    else if (month = june,july,august)
+      printf("rainy");
+               
+
+}
