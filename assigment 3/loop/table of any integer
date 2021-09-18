@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    printf("print table of any integer using loop\n");
+    scanf("%d",&n);
+    printf("enter the number\n");
+    for(i=1;i<=100;++i)
+    {
+        printf("%d*%d=%d\n",i,n,i*n);
+    }
+    
+    return 0;
+}
