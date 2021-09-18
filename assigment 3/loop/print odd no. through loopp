@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+   int i,n;
+   printf("odd number from 1 to 100\n");
+scanf("%d",&n);
+printf("enter the number to print even number from there\n");
+for(i=1;i<=n;i++)
+{printf("%d\n",2*i-1);
+}
+
+    
+}
