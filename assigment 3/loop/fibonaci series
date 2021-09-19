@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int i,n;
+  int t_one = 0, t_two = 1;
+  int next_term = t_one+t_two;
+  printf("enter the number of term to print fibonaci series\n ");
+  scanf("%d",&n);
+  printf("fibonaci series first two terms %d%d\n",t_one,t_two);
+  printf("fibonaci series third_term to n term\n");
+  
+  for(i=3;i<=n;++i)
+  {t_one=t_two;
+  t_two=next_term;
+  next_term= t_one+t_two;
+  printf("%d",next_term);
+  }
+  
+    
+   
+}
