@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+
+int main() {
+   int num,tot,sum=0,rmd;
+   printf("enter the numbers to get the sum of series\n");
+   scanf("%d",&num);
+    tot = num;
+      while (tot != 0){
+      rmd = tot%10;
+      sum = sum+rmd;
+      tot   = tot/10;
+      }
+  
+      printf("the sum of number %d = %d",num,sum);
+}
+      
+      
+      
