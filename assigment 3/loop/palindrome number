@@ -1,0 +1,22 @@
+Write a Program to Check that given No is palindrome or Not. 
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int rmdr,sum=0,num,t;
+    printf("enter the number to reverse it\n ");
+    scanf("%d",&num);
+   for(t=num;num!=0;num=num/10){
+         rmdr=num % 10;
+         sum=sum*10+rmdr;
+ } printf("the reverse number is %d\n",sum);
+ if(sum == t)
+ printf("palindrome number");
+ else
+ printf("not a palindrome number");
+  
+    return 0;
+}
