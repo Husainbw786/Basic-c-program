@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int rows,spaces,symbols,num;
+   int z = 2*num - 1;
+    printf("enter the number the rows\n");
+    scanf("%d",&num);
+    
+    for(rows = num; rows >= 1; rows--)
+    {
+        for(spaces = num-1;spaces >= rows; spaces--)
+        {
+            printf(" ");
+        }
+        for(symbols = 1;symbols <= z; symbols++)
+        {
+            printf("*");
+        } 
+        z = z - 2;
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
