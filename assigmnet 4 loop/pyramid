@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int total_rows,rows,spaces,symbols;
+    printf("enter the number of rows\n");
+    scanf("%d",&total_rows);
+    
+    for(rows = 1; rows <= total_rows; rows++ )
+    
+    {
+        
+        for(spaces = 1; spaces <= (total_rows - rows); spaces++ )
+            printf("   ");
+       for(symbols = 1; symbols <= ((2*rows) - 1); symbols++)
+            printf(" * ");
+        
+            printf("\n");
+    
+    }
+    
+    return 0;
+}
