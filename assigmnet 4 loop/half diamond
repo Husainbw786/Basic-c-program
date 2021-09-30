@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+  int size;
+  printf("enter the size\n");
+  scanf("%d",&size);
+  
+  for(int i = 1; i<=size; i++){
+      for(int j = 1; j<=i; j++){
+      printf("*");}
+   printf("\n");     }
+  
+   for(int i = 1; i<=size; i++){
+      for(int j = 1; j<=size; j++){
+        if(i+j == size || i == 1  )
+        printf("*");
+        else
+        printf(" ");}
+       printf("\n");
+   }
+        }
+        
+          
