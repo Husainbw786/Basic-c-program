@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   int largest1,largest2,n,a[2];
+   printf("enter the number in the array\n ");
+   scanf("%d",&n);
+   printf("enter element\n");
+   
+   for(int i =1; i <= n; i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   largest1 = a[0];
+   
+   for(int i =1; i<=n; i++ ){
+   if(a[i] > largest1){
+      largest1= a[i];}}
+      
+      largest2 = a[0];
+   for(int i =1; i<=n; i++ ){
+   if(a[i] > largest2 && a[i] < largest1)
+      largest2= a[i];
+       
+   }
+printf("First and second largest number is %d and %d ", largest1, largest2);
+      
+    return 0;
+}
