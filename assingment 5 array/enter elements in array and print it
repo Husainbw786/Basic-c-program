@@ -1,0 +1,24 @@
+Write a program in C to store elements in an array and print it 
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a[10],size;
+    printf("enter the size of an array\n");
+    scanf("%d",&size);
+    
+    printf("enter elemnets in an array %d\n",size);
+    for(int i =0; i< size; i++)
+    {
+         scanf("%d",&a[i]);
+    }
+      printf("elemnets in an array are \n");
+       for(int i=0; i< size; i++)
+    {
+         printf("%d   ",a[i]);
+    }
+    
+    return 0;
+}
