@@ -3,11 +3,10 @@ Write a program in C to merge two arrays of same size sorted in decending order.
 
 
 
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-   int size1,size3,size2,i,j,k;
+   int size1,size3,size2,i,j,k,temp;
    int arr1[100],arr2[100],arr3[100];
    printf("program to find the duplicate number in an array\n");
    printf("enter the size of an array\n");
@@ -29,16 +28,29 @@ int main() {
    {
        arr3[i]= arr1[i];
    }
-   for(j=0; j< size2;j++)
+   for(j=0; j< size2;j++,i++)
    {
-       arr3[i] = arr2[j]
+       arr3[i] = arr2[j];
    }
+    for (i=0; i<size1; i++)
+    {
+      for(j=i+1; j<size1; j++)
+        {
+            if ( arr1[i] <= arr1[j])
+            {
+           temp   = arr1[i];
+           arr1[i] = arr1[j];
+           arr1[j] = temp;
+                
+            }
+            
+        }
+      
+    }
+    for(i=0; i<size1; i++)
+      printf("%d ", arr1[i]); 
 
-
-    
-    
-    
-    
+  
     
     return 0;
 }
