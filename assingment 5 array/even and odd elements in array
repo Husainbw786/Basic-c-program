@@ -1,0 +1,48 @@
+Write a program in C to separate odd and even integers in separate arrays 
+
+
+
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int arr1[100];
+    int i, even , odd, n;
+	
+	
+       printf("\n\nFind even and odd element in an array :\n");
+       printf("--------------------------------------------------\n");	
+
+       printf("Input the number of elements to be stored in the array5 :");
+       scanf("%d",&n);
+   
+       printf("Input %d elements in the array :\n",n);
+       for(i=0;i<n;i++)
+            {
+	      printf("element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+	    
+	     printf("\nEven numbers of the array are \n");
+	    for(i = 0; i<n; i++)
+	     if(arr1[i] % 2 ==0 )
+	     {
+	       printf(" %d ",arr1[i]);
+	     }
+	    
+	      printf("\nEven numbers of the array are \n");
+	      for(i = 0; i<n; i++)
+	         if(arr1[i] % 2 ==1 )
+	     {  
+	       printf(" %d ",arr1[i]);
+	     }
+	    
+	    
+	    
+	    
+}
+	    
+	    
