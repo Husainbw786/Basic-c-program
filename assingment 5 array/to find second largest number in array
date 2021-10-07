@@ -1,0 +1,34 @@
+Write a program in C to find the second largest element in an array.
+
+
+
+
+#include <stdio.h>
+
+int main() {
+   int largest1,largest2,n,a[100];
+   printf("to find second largest number in arraay\n ");
+   printf("enter the number in the array\n ");
+   scanf("%d",&n);
+   printf("enter element\n");
+   
+   for(int i =0; i < n; i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   largest1 = a[0];
+   
+   for(int i =0; i<n; i++ ){
+   if(a[i] > largest1){
+      largest1= a[i];}}
+      
+      largest2 = a[0];
+   for(int i =0; i<n; i++ ){
+   if(a[i] > largest2 && a[i] < largest1)
+      largest2= a[i];
+       
+   }
+printf(" second largest number is %d ",largest2);
+      
+    return 0;
+}
