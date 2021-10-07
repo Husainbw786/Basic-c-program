@@ -2,23 +2,23 @@
 #include <stdio.h>
 
 int main() {
-   int largest1,largest2,n,a[2];
+   int largest1,largest2,n,a[100];
    printf("enter the number in the array\n ");
    scanf("%d",&n);
    printf("enter element\n");
    
-   for(int i =1; i <= n; i++)
+   for(int i =0; i < n; i++)
    {
        scanf("%d",&a[i]);
    }
    largest1 = a[0];
    
-   for(int i =1; i<=n; i++ ){
+   for(int i =0; i<n; i++ ){
    if(a[i] > largest1){
       largest1= a[i];}}
       
       largest2 = a[0];
-   for(int i =1; i<=n; i++ ){
+   for(int i =0; i<n; i++ ){
    if(a[i] > largest2 && a[i] < largest1)
       largest2= a[i];
        
