@@ -32,6 +32,55 @@ int main() {
 }
     for(i=0; i<size; i++)
       printf("%d ", arr[i]); 
+      
+      
+      
+      
+      
+      
+      
+      # 2nd methord
+      
+      #include <stdio.h>
+#include <math.h>
+
+int main() {
+   int smallest1,smallest2,n,a[100];
+   printf("enter the number in the array\n ");
+   scanf("%d",&n);
+   printf("enter element\n");
+   
+   for(int i =0; i < n; i++)
+   {
+       scanf("%d",&a[i]);
+   }
+    smallest1 = a[0];
+    int smallest1_index=0;
+   for(int i =1; i<n; i++ ){
+       if(a[i] < smallest1){
+          smallest1= a[i];
+           smallest1_index=i;
+       }
+       
+    }
+      
+    smallest2 = a[abs(smallest1_index-1)];
+   for(int i =1; i<n; i++ ){
+       if((a[i] < smallest2 )&& (a[i] > smallest1)&&(a[i]!=smallest1)){
+         smallest2= a[i];
+        }
+       
+   }
+printf("First and second smallest number is %d and %d ", smallest1, smallest2);
+
+    return 0;
+}
+      
+      
+      
+      
+      
+      
 
       printf("second smallest is %d\n",arr[1]);
     }
