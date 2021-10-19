@@ -1,5 +1,6 @@
 
 
+
 #include <stdio.h>
 
 int main() {
@@ -7,15 +8,15 @@ int main() {
     printf("enter the time\n");
     scanf("%d",&input);
     
-    if(input>10){
-         sum = (3*100) + (150*3) + (250*3) + (input-10)*500;
+    if(input>=10){
+         sum = (3*100) + (150*4) + (250*3) + (input-10)*500;
           printf("money to be deposit %d",sum);
     }
-    else if(input<10 && input >7)
-     {    sum =  (3*100) + (150*3) + (input-7)* 250;
+    else if(input >7)
+     {    sum =  (3*100) + (150*4) + (input-7)* 250;
           printf("money to be deposit %d",sum);
      }
-    else if(input <8 && input >3)
+    else if(input >3)
       {  sum =  (3*100) + (input - 3)*150;
       printf("money to be deposit %d",sum);
       }
