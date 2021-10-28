@@ -1,0 +1,22 @@
+Write a program in C to print the first 50 natural numbers using recursion.
+
+
+
+
+#include <stdio.h>
+
+void printnaturalnumber (int n)
+{
+      if (n<=50)
+    {
+        printf(" %d\n",n);
+        printnaturalnumber (n+1);
+    }
+}
+
+int main()
+{
+int n = 1;
+printf("the 50 natural numbers are\n");
+   printnaturalnumber(n);
+}
