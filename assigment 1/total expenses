@@ -5,13 +5,14 @@ float rate,expense;
 printf("enter the quantity\n");
 scanf("%d",&quantity);
 printf("enter rate \n");
-scanf("%d",&rate);
+scanf("%f",&rate);
 
-if (quantity>1000)
-     discount = 10;
-expense = quantity*rate -(quantity*rate*discount/100);
-printf("total expense is = rs.%f\n",expense);
+if (quantity>=1000)
+{
      
- 
- 
+     expense = (quantity*rate);
+     expense = (quantity*rate) - ((expense/100)*10);
 }
+else
+expense = (quantity*rate);
+printf("total expense is = %f\n",expense);
