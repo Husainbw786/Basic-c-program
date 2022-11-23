@@ -1,7 +1,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int phy,che,math,eng,hin,avg ;
     printf("-----to calculte average of 5 subject-----\n");
   
@@ -26,6 +27,5 @@ int main() {
       printf("3rd Division");
       else if (avg<40)
 		printf("Fail");
-    
  
 }
